@@ -303,7 +303,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100hv;
+    height: 1hv;
 }
 .service h1{
     background-color: #ff8177;
@@ -382,17 +382,17 @@
 
 }
 /*Footer Cont*/
-.footer.container{
-    background-color: #141414;
+.footer__container{
+    background: #252525;
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor:pointer;
     text-decoration: none;
-    font-size: 2rem;
+    
 }
-#footer__logo{
+.footer__logo{
     color: #fff;
     display: flex;
     align-items: center;
@@ -410,6 +410,7 @@
     display: flex;
 }
 .footer__link--items{
+    color: #fff;
     display:flex;
     flex-direction: column;
     align-items: flex-start;
@@ -433,4 +434,30 @@
 .footer__link--items a:hover{
     color:#e9e9e9;
     transition: 0.5s ease-out;
+    transform: scale(1.020)
+}
+.website__rights{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        cursor:pointer;
+        text-decoration: none;
+}
+@media screen and(max-width: 920px) {
+    .footer__links{
+        padding-top: 2rem;
+    }
+    #footer__logo{
+        margin-bottom: 2rem;
+    }
+    .website__rights{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer__link--items{
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    }
 }
